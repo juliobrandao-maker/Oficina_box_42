@@ -41,4 +41,4 @@ Este projeto foi construído sob restrições técnicas específicas para consol
    git clone [https://github.com/SEU_USUARIO/oficina-box42-java.git](https://github.com/SEU_USUARIO/oficina-box42-java.git)
    ```
 3. Abra o projeto em sua IDE (IntelliJ IDEA, Eclipse ou VS Code).
-4. Execute a classe `Main.java`.
+4. Execute a classe `src/Main.java`.
