@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +28,7 @@ public class Main {
                 System.out.println("Quantos servicos voce ira fazer?");
                 int qtdservico = sc.nextInt();
                 sc.nextLine();
-                Servico servico;
+                BaseServico servico;
                 Veiculo veiculo = new Veiculo(placa, modelo, anofabri);
                 OrdemServico ordemServico = new OrdemServico(nome,veiculo,qtdservico);
                 for (int i = 0; i < qtdservico; i++) {
@@ -44,23 +43,23 @@ public class Main {
 
                     switch (opcao2) {
                         case 1:
-                            servico = new Servico("Troca de oleo", 180);
+                            servico = new BaseServico("Troca de oleo", 180);
                             ordemServico.addServico(servico);
                             break;
                         case 2:
-                            servico = new Servico("alinhamento", 100);
+                            servico = new BaseServico("alinhamento", 100);
                             ordemServico.addServico(servico);
                             break;
                         case 3:
-                            servico = new Servico("balanceamento", 120);
+                            servico = new BaseServico("balanceamento", 120);
                             ordemServico.addServico(servico);
                             break;
                         case 4:
-                            servico = new Servico("revisao eletrica", 250);
+                            servico = new BaseServico("revisao eletrica", 250);
                             ordemServico.addServico(servico);
                             break;
                         case 5:
-                            servico = new Servico("troca de pastilhas de freio", 200);
+                            servico = new BaseServico("troca de pastilhas de freio", 200);
                             ordemServico.addServico(servico);
                             break;
                         default:

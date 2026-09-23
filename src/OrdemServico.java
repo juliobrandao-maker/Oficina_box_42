@@ -1,14 +1,14 @@
 public class OrdemServico {
     private String nomecliente;
     private Veiculo veiculo;
-    private Servico[] servicos;
+    private BaseServico[] servicos;
     private int qtdServicos; // Contador de serviços inseridos
 
     // Recebe a capacidade máxima que esta ordem pode suportar de serviços
     public OrdemServico(String nomecliente, Veiculo veiculo, int capacidadeMaximaServicos) {
         this.nomecliente = nomecliente;
         this.veiculo = veiculo;
-        this.servicos = new Servico[capacidadeMaximaServicos];
+        this.servicos = new BaseServico[capacidadeMaximaServicos];
         this.qtdServicos = 0;
     }
 
@@ -20,7 +20,7 @@ public class OrdemServico {
         return veiculo;
     }
 
-    public Servico[] getServicos() {
+    public BaseServico[] getServicos() {
         return servicos;
     }
 
@@ -28,7 +28,7 @@ public class OrdemServico {
         return qtdServicos;
     }
 
-    public void addServico(Servico servico) {
+    public void addServico(BaseServico servico) {
         if (qtdServicos < servicos.length) {
             servicos[qtdServicos] = servico;
             qtdServicos++;
@@ -40,7 +40,7 @@ public class OrdemServico {
     public double calcularValorTotal() {
         double total = 0;
         for (int i = 0; i < qtdServicos; i++) {
-            total += servicos[i].getValor();
+            total += servicos[i].calcularPrecoFinal();
         }
         return total;
     }
@@ -50,7 +50,7 @@ public class OrdemServico {
         veiculo.exibirinfo();
         System.out.println("--- Serviços ---");
         for (int i = 0; i < qtdServicos; i++) {
-            servicos[i].exibiServico();
+            servicos[i].exibirInformacoesBase();
         }
         System.out.println("Total da Ordem: R$ " + calcularValorTotal());
     }
