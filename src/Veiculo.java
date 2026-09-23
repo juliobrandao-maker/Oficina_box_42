@@ -9,7 +9,7 @@ public class Veiculo {
         this.anoFabricacao = anoFabricacao;
     }
 
-    public void exibirinfo(){
+    public void exibirInformacoes(){
         System.out.println("Placa: " + this.placa);
         System.out.println("Modelo: " + this.modelo);
         System.out.println("anoFabricacao: " + this.anoFabricacao);
@@ -23,8 +23,8 @@ public class Veiculo {
     public int getAnoFabricacao() {
         return anoFabricacao;
     }
-    public void setPlaca(String placa1){
-        placa=placa1;
+    public void setPlaca(String placa){
+        this.placa=placa;
     }
 
     public void setAnoFabricacao(int anoFabricacao) {

@@ -13,13 +13,21 @@ public class ServicoDiagnostico extends BaseServico{
         return super.calcularPrecoFinal();
     }
     @Override
-    public void exibirInformacoesBase(){
-        super.exibirInformacoesBase();
+    public void exibirInformacoes(){
+        super.exibirInformacoes();
         if (possuiReparo == true) {
             System.out.println("Possui reparo" + "\n");
         }
         else {
             System.out.println("Não possui Reparo" +"\n");
         }
+    }
+
+    public boolean isPossuiReparo() {
+        return possuiReparo;
+    }
+
+    public void setPossuiReparo(boolean possuiReparo) {
+        this.possuiReparo = possuiReparo;
     }
 }

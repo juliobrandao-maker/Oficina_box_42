@@ -37,7 +37,7 @@ public class Main {
                     String Placa1= sc.nextLine();
                     System.out.println("Quantos servicos voce ira adicionar?");
                     int qtdservico = sc.nextInt();
-                    OrdemServico ordemServico1 = ordens.buscarOrdensPorPlaca1(Placa1);
+                    OrdemServico ordemServico1 = ordens.buscarOrdemPorPlaca(Placa1);
                     if (ordemServico1 == null){
                         System.out.println("Ordem de serviço não encontrada de acordo com a placa digitada");
                         break;
@@ -243,7 +243,10 @@ public class Main {
                 case 5:
                     System.out.println("Digite exatamente a placa do veiculo que deseja buscar: ");
                     String placa1 = sc.nextLine();
-                    ordens.buscarOrdensPorPlaca(placa1);
+                    OrdemServico encontrada = ordens.buscarOrdemPorPlaca(placa1);
+                    if (encontrada != null) {
+                        encontrada.exibirOrdemServico();
+                    }
                     break;
                 case 6:
                     System.out.println("Obrigado por usar o sistema da oficina box 42");

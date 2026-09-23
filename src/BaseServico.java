@@ -25,7 +25,7 @@ public class BaseServico {
     public double calcularPrecoFinal(){
         return valorBase;
     }
-    public void exibirInformacoesBase() {
+    public void exibirInformacoes() {
         System.out.println("Tipo do serviço: " + descricao);
         System.out.println("\nEste é o Valor Base do seu Serviço: " + valorBase + "\n");
     }

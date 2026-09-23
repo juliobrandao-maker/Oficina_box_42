@@ -10,8 +10,16 @@ public class ServicoComPecas extends BaseServico{
         return super.calcularPrecoFinal() + valorPecas;
     }
     @Override
-    public void exibirInformacoesBase(){
-        super.exibirInformacoesBase();
+    public void exibirInformacoes(){
+        super.exibirInformacoes();
         System.out.println("Este é o valor das peças: " + valorPecas+ "\n");
+    }
+
+    public double getValorPecas() {
+        return valorPecas;
+    }
+
+    public void setValorPecas(double valorPecas) {
+        this.valorPecas = valorPecas;
     }
 }

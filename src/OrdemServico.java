@@ -47,12 +47,12 @@ public class OrdemServico {
 
     public void exibirOrdemServico() {
         System.out.println("Cliente: " + nomecliente);
-        veiculo.exibirinfo();
+        veiculo.exibirInformacoes();
         System.out.println("--- Serviços ---");
         for (int i = 0; i < qtdServicos; i++) {
             int i1= i+1;
             System.out.println("===Serviço " + i1 +"===\n");
-            servicos[i].exibirInformacoesBase();
+            servicos[i].exibirInformacoes();
         }
         System.out.println("Total da Ordem: R$ " + calcularValorTotal());
     }
