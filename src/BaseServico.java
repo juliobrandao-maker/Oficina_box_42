@@ -27,7 +27,7 @@ public class BaseServico {
     }
     public void exibirInformacoesBase() {
         System.out.println("Esta é a descrição do serviço: " + descricao);
-        System.out.println("Este é o Valor Base do seu Serviço: " + valorBase);
+        System.out.println("\nEste é o Valor Base do seu Serviço: " + valorBase);
     }
 
 }
