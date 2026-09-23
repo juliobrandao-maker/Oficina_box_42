@@ -12,6 +12,6 @@ public class ServicoComPecas extends BaseServico{
     @Override
     public void exibirInformacoesBase(){
         super.exibirInformacoesBase();
-        System.out.println("\nEste é o valor das peças: " + valorPecas);
+        System.out.println("Este é o valor das peças: " + valorPecas+ "\n");
     }
 }

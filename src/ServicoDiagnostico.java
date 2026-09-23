@@ -15,11 +15,11 @@ public class ServicoDiagnostico extends BaseServico{
     @Override
     public void exibirInformacoesBase(){
         super.exibirInformacoesBase();
-        if (possuiReparo = true) {
-            System.out.println("\nPossui reparo");
+        if (possuiReparo == true) {
+            System.out.println("Possui reparo" + "\n");
         }
         else {
-            System.out.println("\nNão possui Reparo");
+            System.out.println("Não possui Reparo" +"\n");
         }
     }
 }

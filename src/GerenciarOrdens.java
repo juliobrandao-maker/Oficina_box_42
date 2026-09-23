@@ -24,12 +24,13 @@ public class GerenciarOrdens {
         }
         double valorTotal = 0;
         for (int i = 0; i < qtdOrdens; i++) {
+
             valorTotal += ordens[i].calcularValorTotal();
             ordens[i].exibirOrdemServico();
 
             System.out.println("--------------------------------");
         }
-        System.out.println("Valor Total dos Serviços:" + valorTotal );
+
     }
 
     public OrdemServico buscarOrdensPorInicioDoNome(String inicial) {

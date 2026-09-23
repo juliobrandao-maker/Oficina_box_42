@@ -14,8 +14,8 @@ public class ServicoPorHora extends BaseServico{
     @Override
     public void exibirInformacoesBase(){
         super.exibirInformacoesBase();
-        System.out.println("\nEste é o valor por hora Trabalhada: " + valorHora);
-        System.out.println("\nEsta é a quantidade de horas trabalhadas: " + horasTrabalhadas );
+        System.out.println("Este é o valor por hora Trabalhada: " + valorHora);
+        System.out.println("\nEsta é a quantidade de horas trabalhadas: " + horasTrabalhadas + "\n" );
     }
 
     }
